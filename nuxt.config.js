@@ -51,6 +51,9 @@ export default {
   http: {
     // proxyHeaders: false
   },
+  env: {
+    API_BASE_URL: process.env.API_BASE_URL
+  },
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
