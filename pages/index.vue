@@ -40,7 +40,7 @@ export default {
   },
   async beforeMount() {
     await this.$http
-      .$get(`${process.env.BASE_URL}/casos`)
+      .$get(`${process.env.API_BASE_URL}/casos`)
       .then(res => {
         this.cases = res
       })
@@ -52,7 +52,7 @@ export default {
         this.$router.push('/')
       })
     await this.$http
-      .$get(`${process.env.BASE_URL}/timeline`)
+      .$get(`${process.env.API_BASE_URL}/timeline`)
       .then(res => {
         this.timeline = res
       })
